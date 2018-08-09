@@ -1,0 +1,30 @@
+{
+  "name": "vaxic-ratelimit",
+  "version": "1.0.0",
+  "description": "A powerful rate limit extension for Vaxic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanent/vaxic-ratelimit.git"
+  },
+  "keywords": [
+    "ratelimit",
+    "rate",
+    "limit",
+    "rate",
+    "api",
+    "limit",
+    "vaxic",
+    "extension",
+    "api-rate"
+  ],
+  "author": "Ethan Davis (https://ethanent.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethanent/vaxic-ratelimit/issues"
+  },
+  "homepage": "https://github.com/ethanent/vaxic-ratelimit#readme"
+}
