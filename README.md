@@ -26,7 +26,7 @@ const rl = new RateLimiter({
 	// rules
 ])
 
-app.use(rl)
+app.use(rl.extension)
 
 // ... start server v
 ```
