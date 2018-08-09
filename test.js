@@ -38,7 +38,7 @@ app.add('POST', '/hello', (req, res) => {
 	res.end('Hi there!')
 })
 
-app.add('POST', '/hello2', (req, res) => {
+app.add('/hello2', (req, res) => {
 	res.writeHead(200)
 	res.end('Hello 2!')
 })
