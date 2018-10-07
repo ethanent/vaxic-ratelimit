@@ -1,7 +1,7 @@
 module.exports = class RateLimiter {
 	constructor (options, rules) {
 		this.logs = []
-		
+
 		this.options = options
 		this.rules = rules
 
@@ -24,7 +24,7 @@ module.exports = class RateLimiter {
 
 	_convertTime (time) {
 		const unitMultiplier = (time[1] === 's' || time[1] === 'second' || time[1] === 'seconds') ? 1000 :
-							   ((time[1] === 'm' || time[1] === 'minute' || time[1] === 'minutes') ? 60 * 1000 : 
+							   ((time[1] === 'm' || time[1] === 'minute' || time[1] === 'minutes') ? 60 * 1000 :
 							   ((time[1] === 'h' || time[1] === 'hour' || time[1] === 'hours') ? 60 * 60 * 1000 :
 							   ((time[1] === 'd' || time[1] === 'day' || time[1] === 'days') ? 24 * 60 * 60 * 1000 :
 							   1)))
@@ -39,7 +39,7 @@ module.exports = class RateLimiter {
 	_logMatchesRule (log, rule) {
 		if (rule.method && rule.method !== log.method) return false
 
-		if (rule.pathname && rule.pathname instanceof RegExp ? !rule.pathname.test(log.pathname) : rule.pathname !== log.pathname) return false
+		if (rule.pathname && (rule.pathname instanceof RegExp ? !rule.pathname.test(log.pathname) : rule.pathname !== log.pathname)) return false
 
 		return true
 	}

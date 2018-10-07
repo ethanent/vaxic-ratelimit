@@ -1,6 +1,6 @@
 {
   "name": "vaxic-ratelimit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A powerful rate limit extension for Vaxic.",
   "main": "model/RateLimiter.js",
   "scripts": {
@@ -29,5 +29,8 @@
   "homepage": "https://github.com/ethanent/vaxic-ratelimit#readme",
   "peerDependencies": {
     "vaxic": "*"
+  },
+  "devDependencies": {
+    "vaxic": "^2.3.5"
   }
 }
